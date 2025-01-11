@@ -17,11 +17,22 @@ rect {
   stroke-width: 1px;
   stroke-dasharray: 528;
   stroke-dashoffset: 528;
-  animation: progress 2s linear forwards;
+  animation: progress 1.8s linear forwards;
 }
 
 @keyframes progress {
   100% {
     stroke-dashoffset: 0;
+  }
+}
+
+.btn-line-anim {
+  animation: lineAnim 0.5s linear forwards;
+  animation-delay: 1.8s;
+}
+
+@keyframes lineAnim {
+  100% {
+    width: 2rem;
   }
 }

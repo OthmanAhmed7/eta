@@ -6,11 +6,7 @@ const tailwindConfig = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        hero: "url('/img/hero.jpg')",
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
