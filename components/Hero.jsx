@@ -13,7 +13,7 @@ const Hero = () => {
         className="translate-y-[-15%]"
       />
 
-      <Button />
+      <Button name={"Contact Us"} />
     </section>
   );
 };

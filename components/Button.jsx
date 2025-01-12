@@ -1,9 +1,9 @@
 import React from "react";
 
-const Button = () => {
+const Button = ({ name }) => {
   return (
     <button className="relative flex items-center justify-center text-white font-semibold w-[13rem] h-[3.5rem] text-xl group hover:bg-[#fff] hover:text-[#161616] transition duration-500 ease-out">
-      Contact Us
+      {name}
       <svg
         width="219"
         height="67"
