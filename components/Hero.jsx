@@ -22,7 +22,7 @@ const Hero = () => {
         width={2000}
         height={1000}
         alt="topography background pattern"
-        className="w-[107rem] bg-cover absolute top-0 left-0 opacity-15"
+        className="bg-cover absolute top-0 left-0 opacity-15"
       />
     </section>
   );
