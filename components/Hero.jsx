@@ -4,13 +4,13 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <section className="relative overflow-hidden h-screen w-full bg-cover bg-no-repeat bg-[#181818] flex flex-col items-center justify-center">
+    <section className="relative h-screen w-full bg-cover overflow-hidden bg-no-repeat bg-[#181818] flex flex-col items-center justify-center">
       <Image
         src="/img/logo.png"
         width={800}
         height={800}
         alt="Eta logo"
-        className="translate-y-[-14%] z-30 absolute w-[50rem]"
+        className="z-30 absolute w-[50rem] translate-y-[-20%]"
       />
 
       <div className="translate-y-[380%] z-30">

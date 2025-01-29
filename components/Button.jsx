@@ -2,11 +2,11 @@ import React from "react";
 
 const Button = ({ name }) => {
   return (
-    <button className="relative flex items-center justify-center text-white font-semibold w-[13rem] h-[3.5rem] text-xl group hover:bg-[#fff] hover:text-[#161616] transition duration-500 ease-out">
+    <button className="relative flex items-center justify-center text-white font-semibold w-[13rem] h-[3.55rem] text-xl group hover:bg-[#fff] hover:text-[#161616] transition duration-500 ease-out">
       {name}
       <svg
         width="219"
-        height="67"
+        height="70"
         xmlns="http://www.w3.org/2000/svg"
         className="absolute top-[-.628rem] left-[-.6rem]"
       >
