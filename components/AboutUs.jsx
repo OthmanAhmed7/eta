@@ -6,21 +6,21 @@ const AboutUs = () => {
       <div className="flex flex-1 justify-center">
         <div className="grid grid-cols-2 grid-rows-2 border-[.8rem] border-[#181818]">
           <div className="row-span-2 place-content-center px-[6rem] py-[2rem] flex flex-col items-center justify-center text-[#181818] border-r-[1px] border-[#181818]">
-            <p className="text-[8rem]">10</p>
-            <p className="text-center font-[500]">
+            <p className="text-[10rem]">10</p>
+            <p className="text-center font-[300] tracking-[.15rem] ">
               Years of <br />
               Experience
             </p>
           </div>
 
-          <div className="flex flex-col items-center justify-center border-b-[1px] border-[#181818]">
-            <p className="text-[4rem]">68</p>
-            <p className="font-[500]">Projects</p>
+          <div className="flex flex-col items-center justify-center border-b-[1px] border-[#181818] text-[#181818]">
+            <p className="text-[5rem]">68</p>
+            <p className="font-[300] tracking-[.15rem] ">Projects</p>
           </div>
 
-          <div className="flex flex-col items-center justify-center">
-            <p className="text-[4rem]">21</p>
-            <p className="font-[500]">Clients</p>
+          <div className="flex flex-col items-center justify-center text-[#181818]">
+            <p className="text-[5rem]">21</p>
+            <p className="font-[300] tracking-[.15rem] ">Clients</p>
           </div>
         </div>
       </div>

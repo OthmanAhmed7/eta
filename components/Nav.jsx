@@ -1,16 +1,37 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { RiMenuFoldFill } from "react-icons/ri";
 import { RiMenuUnfoldFill } from "react-icons/ri";
 
 const Nav = () => {
   const [toggleNav, setToggleNav] = useState(false);
+  const [switchColor, setSwitchColor] = useState(false);
+
+  useEffect(() => {
+    const whiteBackground = () => {
+      if (window.pageYOffset >= 200) {
+        setSwitchColor(true);
+      } else {
+        setSwitchColor(false);
+      }
+    };
+
+    window.addEventListener("scroll", whiteBackground);
+
+    return () => {
+      window.removeEventListener("scroll", whiteBackground);
+    };
+  }, []);
 
   return (
-    <section className="fixed top-0 left-0 right-0 flex mx-auto justify-center z-50">
+    <section
+      className={`fixed top-0 left-0 right-0 flex mx-auto justify-center z-50 ${
+        switchColor === true ? "bg-white shadow-2xl" : ""
+      } transition duration-500 ease-out`}
+    >
       <nav className="flex justify-between items-center max-w-[1440px] w-full px-[1rem] py-[1rem]">
         <a href="#">
           <Image
@@ -23,7 +44,9 @@ const Nav = () => {
         </a>
 
         <RiMenuFoldFill
-          className="w-[2rem] h-[2rem] text-white cursor-pointer"
+          className={`w-[2rem] h-[2rem] cursor-pointer ${
+            switchColor === true ? "text-black" : "text-white"
+          } transition duration-500 ease-out`}
           onClick={() => {
             setToggleNav(true);
           }}
@@ -31,6 +54,9 @@ const Nav = () => {
       </nav>
 
       <div
+        onClick={() => {
+          setToggleNav(false);
+        }}
         className={`${
           toggleNav === false ? "translate-x-[100%]" : ""
         } w-[100%] h-[100vh] fixed bg-black/30 transition duration-700 ease-out`}
