@@ -8,8 +8,9 @@ import { RiMenuUnfoldFill } from "react-icons/ri";
 
 const Nav = () => {
   const [toggleNav, setToggleNav] = useState(false);
+
   return (
-    <section className="fixed flex mx-auto w-[100%] h-[5rem] z-50">
+    <section className="fixed top-0 left-0 right-0 flex mx-auto justify-center z-50">
       <nav className="flex justify-between items-center max-w-[1440px] w-full px-[1rem] py-[1rem]">
         <a href="#">
           <Image
@@ -22,7 +23,7 @@ const Nav = () => {
         </a>
 
         <RiMenuFoldFill
-          className="w-[2rem] h-[2rem] text-white"
+          className="w-[2rem] h-[2rem] text-white cursor-pointer"
           onClick={() => {
             setToggleNav(true);
           }}
