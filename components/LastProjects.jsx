@@ -1,9 +1,32 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { lastWork } from "../lib/LatestWork";
+import Button from "./SecodaryButton";
 
 const LastProjects = () => {
-  let projectNumber = 3;
+  const [hideButton, setHideButton] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [projectNumber, setProjectNumber] = useState(3);
+  const [timeoutId, setTimeoutId] = useState(null);
+
+  // Clear timeout on component unmount
+  useEffect(() => {
+    return () => {
+      if (timeoutId) clearTimeout(timeoutId);
+    };
+  }, [timeoutId]);
+
+  const delayTime = () => {
+    setLoading(true);
+    const id = setTimeout(() => {
+      setHideButton(true);
+      setProjectNumber(lastWork.length);
+    }, 2000);
+    setTimeoutId(id);
+  };
+
   return (
     <section className="mx-auto my-[8rem] max-w-[1440px] flex flex-col justify-center items-center gap-[4rem] px-[1rem]">
       <div className="flex flex-col w-full">
@@ -39,6 +62,13 @@ const LastProjects = () => {
             ""
           )
         )}
+      </div>
+
+      <div
+        className={`${hideButton === true ? "hidden" : ""} `}
+        onClick={delayTime}
+      >
+        <Button name={loading === true ? "Loading..." : "Load More"} />
       </div>
     </section>
   );
