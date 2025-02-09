@@ -1,5 +1,6 @@
 import AboutUs from "@/components/AboutUs";
 import Hero from "@/components/Hero";
+import LastProjects from "@/components/LastProjects";
 import Nav from "@/components/Nav";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Nav />
       <Hero />
       <AboutUs />
+      <LastProjects />
     </div>
   );
 }

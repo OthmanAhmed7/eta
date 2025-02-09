@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const Hero = () => {
   return (
-    <section className="relative h-screen w-full bg-cover overflow-hidden bg-no-repeat bg-[#181818] flex flex-col items-center justify-center">
+    <section className="relative h-screen w-full bg-cover overflow-hidden bg-no-repeat bg-[#181818] flex flex-col items-center justify-center px-[1rem]">
       <Image
         src="/img/logo.png"
         width={800}

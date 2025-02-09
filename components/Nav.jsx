@@ -20,15 +20,11 @@ const Nav = () => {
     };
 
     window.addEventListener("scroll", whiteBackground);
-
-    return () => {
-      window.removeEventListener("scroll", whiteBackground);
-    };
   }, []);
 
   return (
     <section
-      className={`fixed top-0 left-0 right-0 flex mx-auto justify-center z-50 ${
+      className={`px-[1rem] fixed top-0 left-0 right-0 flex mx-auto justify-center z-50 ${
         switchColor === true ? "bg-white shadow-2xl" : ""
       } transition duration-500 ease-out`}
     >
