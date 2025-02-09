@@ -7,7 +7,6 @@ const Button = ({ name }) => {
       <svg
         width="219"
         height="70"
-        xmlns="http://www.w3.org/2000/svg"
         className="absolute top-[-.628rem] left-[-.6rem]"
       >
         <rect width="0" height="0" x="10" y="10" fill="white" />

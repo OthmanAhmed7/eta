@@ -20,6 +20,17 @@ rect {
   animation: progress 1.8s linear forwards;
 }
 
+svg .secondary {
+  fill: none;
+  width: 13rem;
+  height: 3.5rem;
+  stroke: #161616;
+  stroke-width: 1px;
+  stroke-dasharray: 528;
+  stroke-dashoffset: 528;
+  animation: progress 1.8s linear forwards;
+}
+
 @keyframes progress {
   100% {
     stroke-dashoffset: 0;
