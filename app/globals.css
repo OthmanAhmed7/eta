@@ -47,3 +47,7 @@ svg .secondary {
     width: 2rem;
   }
 }
+
+.stroke {
+  -webkit-text-stroke: 0.8px #fff;
+}
