@@ -17,7 +17,7 @@ const Services = () => {
 
         <div className="flex items-center justify-center gap-[2rem]">
           <div className="relative px-[1.5rem] pt-[2.5rem] border overflow-hidden border-white h-[24rem] bg-[url(/img/furniture.png)] bg-cover group">
-            <div className="absolute top-0 left-0 bg-[#161616] w-full h-full z-10 group-hover:opacity-80 transition ease-out duration-500"></div>
+            <div className="absolute top-0 left-0 bg-[#161616] w-full h-full z-10 group-hover:opacity-80 transition ease-out duration-700"></div>
             <p className="z-20 relative font-[800] text-[4rem] stroke text-transparent">
               01
             </p>
@@ -26,7 +26,7 @@ const Services = () => {
               Furniture
             </h3>
 
-            <p className="z-20 relative text-slate-300 mt-[1rem] text-[1.125rem] font-[300] translate-y-[250%] group-hover:translate-y-0 transition duration-500 ease-out">
+            <p className="z-20 relative text-slate-300 mt-[1rem] text-[1.125rem] font-[300] translate-y-[250%] group-hover:translate-y-0 transition duration-700 ease-out">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
               minima quibusdam labore reprehenderit voluptatibus similique neque
               est vero vitae blanditiis!
@@ -41,7 +41,7 @@ const Services = () => {
           </div>
 
           <div className="relative px-[1.5rem] pt-[2.5rem] border overflow-hidden border-white h-[24rem] bg-[url(/img/interior.png)] bg-cover group">
-            <div className="absolute top-0 left-0 bg-[#161616] w-full h-full z-10 group-hover:opacity-80 transition ease-out duration-500"></div>
+            <div className="absolute top-0 left-0 bg-[#161616] w-full h-full z-10 group-hover:opacity-80 transition ease-out duration-700"></div>
             <p className="z-20 relative font-[800] text-[4rem] stroke text-transparent">
               02
             </p>
@@ -50,7 +50,7 @@ const Services = () => {
               Interior
             </h3>
 
-            <p className="z-20 relative text-slate-300 mt-[1rem] text-[1.125rem] font-[300] translate-y-[250%] group-hover:translate-y-0 transition duration-500 ease-out">
+            <p className="z-20 relative text-slate-300 mt-[1rem] text-[1.125rem] font-[300] translate-y-[250%] group-hover:translate-y-0 transition duration-700 ease-out">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
               minima quibusdam labore reprehenderit voluptatibus similique neque
               est vero vitae blanditiis!
@@ -65,7 +65,7 @@ const Services = () => {
           </div>
 
           <div className="relative px-[1.5rem] pt-[2.5rem] border overflow-hidden border-white h-[24rem] bg-[url(/img/exterior.png)] bg-cover group">
-            <div className="absolute top-0 left-0 bg-[#161616] w-full h-full z-10 group-hover:opacity-80 transition ease-out duration-500"></div>
+            <div className="absolute top-0 left-0 bg-[#161616] w-full h-full z-10 group-hover:opacity-80 transition ease-out duration-700"></div>
             <p className="z-20 relative font-[800] text-[4rem] stroke text-transparent">
               03
             </p>
@@ -74,7 +74,7 @@ const Services = () => {
               Exterior
             </h3>
 
-            <p className="z-20 relative text-slate-300 mt-[1rem] text-[1.125rem] font-[300] translate-y-[250%] group-hover:translate-y-0 transition duration-500 ease-out">
+            <p className="z-20 relative text-slate-300 mt-[1rem] text-[1.125rem] font-[300] translate-y-[250%] group-hover:translate-y-0 transition duration-700 ease-out">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
               minima quibusdam labore reprehenderit voluptatibus similique neque
               est vero vitae blanditiis!
