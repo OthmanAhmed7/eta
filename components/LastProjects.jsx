@@ -23,18 +23,18 @@ const LastProjects = () => {
     const id = setTimeout(() => {
       setHideButton(true);
       setProjectNumber(lastWork.length);
-    }, 2000);
+    }, 1500);
     setTimeoutId(id);
   };
 
   return (
     <section className="mx-auto my-[8rem] max-w-[1440px] flex flex-col justify-center items-center gap-[4rem] px-[1rem]">
       <div className="flex flex-col w-full">
-        <p className="flex items-center gap-[.5rem] font-[300] tracking-[.45rem] text-[1.5rem]">
+        <p className="flex items-center gap-[.5rem] font-[300] tracking-[.45rem] text-[1.3rem]">
           Last Projects
         </p>
 
-        <h2 className="text-[4rem] font-[700] leading-[5rem] tracking-tight">
+        <h2 className="text-[3.5rem] font-[700] leading-[5rem] tracking-tight">
           Thrive for Perfection
         </h2>
       </div>

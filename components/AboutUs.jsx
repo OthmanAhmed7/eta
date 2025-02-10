@@ -27,11 +27,15 @@ const AboutUs = () => {
 
       <div className="flex flex-1">
         <div className="flex flex-col justify-center items-start gap-[1rem]">
-          <p className="font-[300] tracking-[.2rem]">About Us</p>
+          <div>
+            <p className="font-[300] tracking-[.45rem] text-[1.3rem]">
+              About Us
+            </p>
 
-          <h2 className="text-[4rem] font-[700] leading-[5rem] tracking-tight">
-            All Our Attention <br /> Is For Your Comfort
-          </h2>
+            <h2 className="text-[3.5rem] font-[700] leading-[4rem] tracking-tight">
+              All Our Attention <br /> Is For Your Comfort
+            </h2>
+          </div>
 
           <p className="text-slate-500 w-[30rem] text-[1.2rem]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
