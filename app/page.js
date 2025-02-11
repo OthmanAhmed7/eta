@@ -1,4 +1,5 @@
 import AboutUs from "@/components/AboutUs";
+import Events from "@/components/Events";
 import Hero from "@/components/Hero";
 import LastProjects from "@/components/LastProjects";
 import Nav from "@/components/Nav";
@@ -12,6 +13,7 @@ export default function Home() {
       <AboutUs />
       <LastProjects />
       <Services />
+      <Events />
     </div>
   );
 }
