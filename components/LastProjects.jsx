@@ -11,7 +11,6 @@ const LastProjects = () => {
   const [projectNumber, setProjectNumber] = useState(3);
   const [timeoutId, setTimeoutId] = useState(null);
 
-  // Clear timeout on component unmount
   useEffect(() => {
     return () => {
       if (timeoutId) clearTimeout(timeoutId);
