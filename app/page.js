@@ -1,5 +1,6 @@
 import AboutUs from "@/components/AboutUs";
 import Articles from "@/components/Articles";
+import ContactUs from "@/components/ContactUs";
 import Hero from "@/components/Hero";
 import LastProjects from "@/components/LastProjects";
 import Nav from "@/components/Nav";
@@ -14,6 +15,7 @@ export default function Home() {
       <LastProjects />
       <Services />
       <Articles />
+      <ContactUs />
     </div>
   );
 }
