@@ -8,7 +8,7 @@ import { FaTiktok } from "react-icons/fa6";
 const Footer = () => {
   return (
     <section className="bg-[#161616]">
-      <div className="relative mx-auto py-[8rem] max-w-[1440px] flex flex-col justify-center items-center gap-[4rem] px-[1rem] ">
+      <div className="relative mx-auto py-[5rem] max-w-[1440px] flex flex-col justify-center items-center gap-[4rem] px-[1rem] ">
         {/* <div>
           <Image
             width={500}

@@ -37,7 +37,7 @@ const AboutUs = () => {
             </h2>
           </div>
 
-          <p className="text-slate-500 max-w-[30rem] text-[1.2rem]">
+          <p className="text-slate-500 w-full text-[1.2rem]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
             ex dolorem? Praesentium asperiores enim sed similique, dolore vitae
             laboriosam dolor. Lorem ipsum dolor sit amet consectetur adipisicing
