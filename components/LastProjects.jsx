@@ -38,7 +38,7 @@ const LastProjects = () => {
         </h2>
       </div>
 
-      <div className="grid grid-cols-3 w-full gap-[2rem]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-[2rem]">
         {lastWork.map((i) =>
           i.id <= projectNumber ? (
             <div key={i.id}>
