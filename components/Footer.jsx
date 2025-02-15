@@ -20,27 +20,28 @@ const Footer = () => {
         </div> */}
 
         <div className="w-full flex flex-col gap-[2.5rem] pb-[4rem] border-b-[1px] z-10">
-          <div className="flex items-end justify-between">
+          <div className="flex flex-col md:flex-row gap-[1.5rem] md:gap-0 items-center md:items-end justify-between">
             <Image
               width={500}
               height={500}
               alt="Eta Logo"
               src="/img/logo.png"
+              className="flex-1"
             />
 
-            <p className="text-[1.5rem] font-[300] text-white tracking-[.35rem]">
+            <p className="flex flex-1 justify-end text-[1.5rem] font-[300] text-white tracking-[.35rem]">
               Get In Touch
             </p>
           </div>
 
-          <div className="w-full flex items-start justify-between text-white">
-            <p className="text-[1.125rem] w-[35rem] font-[300] leading-[1.8rem]">
+          <div className="w-full flex flex-col md:flex-row gap-[1.5rem] md:gap-0 items-start justify-between text-white">
+            <p className="flex flex-1 text-[1.125rem] max-w-[35rem] font-[300] leading-[1.8rem]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
               totam deleniti itaque atque sit commodi quod exercitationem quam
               ea ex?
             </p>
 
-            <div className="">
+            <div className="flex flex-col flex-1 items-end">
               <p>(002) 0100 008 3181 - (002) 0100 522 0653</p>
               <p>20, Villa Hanin, El-Bahr st.</p>
               <p>employer@eta.com</p>
@@ -48,15 +49,15 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex items-center justify-between text-white w-full z-10">
-          <p className="">
+        <div className="flex flex-col-reverse md:flex-row gap-[1.5rem] md:gap-0 items-center justify-between text-white w-full z-10">
+          <p className="flex flex-1 gap-1">
             All Rights Reserved |{" "}
             <a href="https://portfolio-v2-ten-tau.vercel.app/" target="_Blank">
               Othman Ahmed
             </a>
           </p>
 
-          <div className="flex items-center gap-[1.5rem]">
+          <div className="flex flex-1 justify-end items-center gap-[1.5rem]">
             <a
               href=""
               target="_Blank"
