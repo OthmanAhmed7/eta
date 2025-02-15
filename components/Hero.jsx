@@ -10,7 +10,7 @@ const Hero = () => {
         width={800}
         height={800}
         alt="Eta logo"
-        className="z-30 absolute w-[50rem] translate-y-[-20%]"
+        className="z-30 absolute w-[50rem] translate-y-[-20%] px-[1rem]"
       />
 
       <div className="translate-y-[380%] z-30">
@@ -22,7 +22,7 @@ const Hero = () => {
         width={2000}
         height={1000}
         alt="topography background pattern"
-        className="bg-cover absolute top-0 left-0 opacity-15"
+        className="bg-cover absolute top-0 left-0 opacity-15 h-[100vh]"
       />
     </section>
   );

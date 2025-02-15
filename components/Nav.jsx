@@ -28,7 +28,7 @@ const Nav = () => {
         switchColor === true ? "bg-white shadow-2xl" : ""
       } transition duration-500 ease-out`}
     >
-      <nav className="flex justify-between items-center max-w-[1440px] w-full px-[1rem] py-[1rem]">
+      <nav className="flex justify-between items-center max-w-[1440px] w-full py-[1rem]">
         <a href="#">
           <Image
             src="/img/logo.png"
@@ -65,7 +65,7 @@ const Nav = () => {
       <nav
         className={`fixed ${
           toggleNav === false ? "translate-x-[100%]" : ""
-        } h-[100vh] bg-white right-0 top-0 z-30 w-[35%] transition duration-700 ease-out`}
+        } h-[100vh] bg-white right-0 top-0 z-30 w-[75%] lg:w-[45%] transition duration-700 ease-out overflow-scroll`}
       >
         <RiMenuUnfoldFill
           className="absolute z-50 right-[5rem] top-[3rem] w-[2rem] h-[2rem] cursor-pointer"
@@ -93,7 +93,7 @@ const Nav = () => {
             className="flex justify-center items-center w-[70%] h-[10rem]"
           />
 
-          <div className="text-center flex flex-col gap-[1rem] font-[500]">
+          <div className="text-center flex flex-col gap-[1rem] font-[500] mb-[3rem]">
             <div>emplyee@eta.com</div>
 
             <div>
