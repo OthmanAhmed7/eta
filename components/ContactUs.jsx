@@ -1,7 +1,12 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 
 const ContactUs = () => {
+  const [nameInput, setNameInput] = useState();
+
+  console.log(nameInput);
   return (
     <section className="mx-auto my-[8rem] max-w-[1440px] flex flex-col justify-center items-center px-[1rem]">
       <div className="flex flex-col w-full">
@@ -66,10 +71,20 @@ const ContactUs = () => {
               <div className="relative w-full group">
                 <input
                   type="text"
+                  value={nameInput}
+                  onChange={(e) => {
+                    setNameInput(e.target.value);
+                  }}
                   className="w-full h-[2.5rem] border border-slate-500"
                 />
 
-                <span className="absolute top-[20%] left-[6%] text-slate-500  group-focus-within:bg-white group-focus-within:top-[-25%] group-focus-within:left-[4%] group-focus-within:text-[.9rem] group-focus-within:px-[.1rem] transition-all duration-500 ease-out">
+                <span
+                  className={`absolute top-[20%] left-[6%] text-slate-500  group-focus-within:bg-white group-focus-within:top-[-25%] group-focus-within:left-[4%] group-focus-within:text-[.9rem] group-focus-within:px-[.1rem] transition-all duration-500 ease-out ${
+                    nameInput === true
+                      ? "bg-white top-[-25%] left-[4%] text-[.9rem] px-[.1rem]"
+                      : ""
+                  }`}
+                >
                   Name
                 </span>
               </div>
