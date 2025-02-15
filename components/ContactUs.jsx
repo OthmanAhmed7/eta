@@ -19,7 +19,7 @@ const ContactUs = () => {
         </h2>
       </div>
 
-      <div className="flex items-center justify-center gap-[10rem]">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-[2rem] lg:gap-[6rem]">
         <div className="flex-1 flex-col gap-[2rem] my-[2.5rem]">
           <p className="text-slate-500 text-[1.2rem]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
@@ -29,7 +29,7 @@ const ContactUs = () => {
             odio?
           </p>
 
-          <div className="flex items-center justify-start gap-[2rem] mt-[4rem]">
+          <div className="grid grid-cols-2 md:grid-cols-3 items-center justify-start gap-[2rem] mt-[4rem]">
             <div className="flex flex-col flex-1 items-start gap-[2rem]">
               <span className="w-[5rem] h-[1px] bg-[#161616]"></span>
 
