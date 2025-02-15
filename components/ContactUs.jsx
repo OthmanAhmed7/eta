@@ -1,11 +1,7 @@
-"use client";
-
-import React, { useState } from "react";
+import React from "react";
 import { MdArrowOutward } from "react-icons/md";
 
 const ContactUs = () => {
-  const [inputClick, setInputClick] = useState(false);
-
   return (
     <section className="mx-auto my-[8rem] max-w-[1440px] flex flex-col justify-center items-center px-[1rem]">
       <div className="flex flex-col w-full">
@@ -67,34 +63,50 @@ const ContactUs = () => {
             className="flex flex-col items-center justify-center gap-[2rem]"
           >
             <div className="flex items-center gap-[1.5rem] w-full">
-              <div className="relative w-full">
+              <div className="relative w-full group">
                 <input
                   type="text"
-                  className="w-full h-[2.5rem] border border-[#161616]"
+                  className="w-full h-[2.5rem] border border-slate-500"
                 />
 
-                <span
-                  className={`absolute top-[20%] left-[8%] text-slate-500 transition duration-700 ease-out group`}
-                >
+                <span className="absolute top-[20%] left-[6%] text-slate-500  group-focus-within:bg-white group-focus-within:top-[-25%] group-focus-within:left-[4%] group-focus-within:text-[.9rem] group-focus-within:px-[.1rem] transition-all duration-500 ease-out">
                   Name
                 </span>
               </div>
-              <input
-                type="text"
-                className="w-full h-[2.5rem] border border-[#161616]"
-              />
+
+              <div className="relative w-full group">
+                <input
+                  type="text"
+                  className="w-full h-[2.5rem] border border-slate-500"
+                />
+
+                <span className="absolute top-[20%] left-[6%] text-slate-500  group-focus-within:bg-white group-focus-within:top-[-25%] group-focus-within:left-[4%] group-focus-within:text-[.9rem] group-focus-within:px-[.1rem] transition-all duration-500 ease-out">
+                  Phone
+                </span>
+              </div>
             </div>
 
-            <input
-              type="email"
-              className="w-full h-[2.5rem] border border-[#161616]"
-            />
+            <div className="relative w-full group">
+              <input
+                type="email"
+                className="w-full h-[2.5rem] border border-slate-500"
+              />
 
-            <textarea
-              name=""
-              id=""
-              className="w-full h-[8rem] border border-[#161616]"
-            ></textarea>
+              <span className="absolute top-[20%] left-[3%] text-slate-500  group-focus-within:bg-white group-focus-within:top-[-25%] group-focus-within:left-[1.5%] group-focus-within:text-[.9rem] group-focus-within:px-[.1rem] transition-all duration-500 ease-out">
+                Email
+              </span>
+            </div>
+
+            <div className="relative w-full group">
+              <textarea
+                name=""
+                id=""
+                className="w-full h-[8rem] border border-slate-500"
+              ></textarea>
+              <span className="absolute top-[8%] left-[3%] text-slate-500  group-focus-within:bg-white group-focus-within:top-[-9%] group-focus-within:left-[1.5%] group-focus-within:text-[.9rem] group-focus-within:px-[.1rem] transition-all duration-500 ease-out">
+                Message
+              </span>
+            </div>
 
             <button className="flex items-center self-end mt-[.5rem] gap-[.8rem] w-[5rem] h-[1.5rem] text-slate-600">
               Submit <MdArrowOutward />
