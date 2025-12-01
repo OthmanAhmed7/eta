@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import ContactUs from "@/components/ContactUs";
+import SectionHeader from "@/components/SectionHeader";
 
 const page = () => {
   return (
@@ -16,6 +17,13 @@ const page = () => {
       </section>
 
       <ContactUs />
+
+      <section className="flex flex-col m-auto items-start max-w-[1200px]">
+        <SectionHeader
+          header={"Locations"}
+          title={"Choose The Nearest Location"}
+        />
+      </section>
     </>
   );
 };
