@@ -18,7 +18,8 @@ const page = () => {
         </p>
 
         <h1 className="text-white text-[3rem] text-center font-[600]">
-          Our work <br /> blends creativity with meaningful knowledge-sharing.
+          Our work <br /> blends creativity <br /> with meaningful
+          knowledge-sharing.
         </h1>
       </section>
 
