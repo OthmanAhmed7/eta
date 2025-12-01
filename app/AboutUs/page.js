@@ -1,4 +1,5 @@
 import PageHeader from "@/components/PageHeader";
+import SectionHeader from "@/components/SectionHeader";
 import Image from "next/image";
 import React from "react";
 
@@ -11,11 +12,10 @@ const page = () => {
       />
 
       <section className="flex flex-col m-auto items-left justify-center w-full max-w-[1200px] pt-[5rem] pb-[5rem]">
-        <p className="font-thin tracking-[.35rem]">About Us</p>
-
-        <h2 className="text-[700] text-[2rem] mb-[2rem]">
-          Our Attention Is For Your Comfort.
-        </h2>
+        <SectionHeader
+          header={"About Us"}
+          title={"Our Attention Is For Your Comfort."}
+        />
 
         <p className="text-slate-500 text-[1.2rem] mb-[2rem]">
           Our team manages every step of the process — from developing the

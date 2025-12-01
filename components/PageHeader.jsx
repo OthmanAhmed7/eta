@@ -17,7 +17,7 @@ const PageHeader = ({ pageName, header }) => {
           {pageName}
         </p>
 
-        <h1 className="text-white text-[3rem] text-center font-[600] max-w-[60rem]">
+        <h1 className="text-white text-[3rem] text-center font-[700] max-w-[60rem]">
           {header}
         </h1>
       </section>
