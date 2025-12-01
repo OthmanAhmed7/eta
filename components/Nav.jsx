@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 import { RiMenuFoldFill } from "react-icons/ri";
@@ -77,11 +78,21 @@ const Nav = () => {
         <div className="flex flex-col mt-[7rem] justify-center items-center">
           <div>
             <ul className="text-center flex flex-col gap-[1.5rem] text-[1.8rem] font-[600] tracking-[.1rem]">
-              <li>Home</li>
-              <li>Gallery</li>
-              <li>Services</li>
-              <li>About Us</li>
-              <li>Contact Us</li>
+              <Link href="/">
+                <li>Home</li>
+              </Link>{" "}
+              <Link href="#">
+                <li>Gallery</li>
+              </Link>{" "}
+              <Link href="#">
+                <li>Services</li>
+              </Link>{" "}
+              <Link href="/AboutUs">
+                <li>About Us</li>
+              </Link>
+              <Link href="#">
+                <li>Contact Us</li>
+              </Link>
             </ul>
           </div>
 
