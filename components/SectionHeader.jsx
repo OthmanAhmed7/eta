@@ -7,7 +7,7 @@ const SectionHeader = ({ header, title }) => {
         {header}
       </p>
 
-      <h2 className="text-[3.5rem] font-[600] leading-[5rem] tracking-tight mb-[2rem]">
+      <h2 className="text-[3.5rem] font-[600] leading-[5rem] tracking-tight mb-[4rem]">
         {title}
       </h2>
     </>
