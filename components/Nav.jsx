@@ -30,7 +30,7 @@ const Nav = () => {
       } transition duration-500 ease-out`}
     >
       <nav className="flex justify-between items-center max-w-[1440px] w-full py-[1rem]">
-        <a href="#">
+        <a href="/">
           <Image
             src="/img/logo.png"
             height={1000}
@@ -81,16 +81,16 @@ const Nav = () => {
               <Link href="/">
                 <li>Home</li>
               </Link>{" "}
-              <Link href="#">
+              <Link href="/Gallery">
                 <li>Gallery</li>
               </Link>{" "}
-              <Link href="#">
+              <Link href="/Services">
                 <li>Services</li>
               </Link>{" "}
               <Link href="/AboutUs">
                 <li>About Us</li>
               </Link>
-              <Link href="#">
+              <Link href="/ContactUs">
                 <li>Contact Us</li>
               </Link>
             </ul>
