@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import ContactUs from "@/components/ContactUs";
 
 const page = () => {
   return (
@@ -13,6 +14,8 @@ const page = () => {
           className="bg-cover absolute top-0 left-0 opacity-15 h-[100vh]"
         />
       </section>
+
+      <ContactUs />
     </>
   );
 };

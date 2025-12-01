@@ -8,7 +8,7 @@ const ContactUs = () => {
 
   console.log(nameInput);
   return (
-    <section className="mx-auto my-[8rem] max-w-[1440px] flex flex-col justify-center items-center px-[1rem]">
+    <section className="mx-auto my-[8rem] max-w-[1200px] flex flex-col justify-center items-center px-[1rem]">
       <div className="flex flex-col w-full">
         <p className="flex items-center font-[300] tracking-[.45rem] text-[1.3rem]">
           Contact

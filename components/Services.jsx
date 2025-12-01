@@ -3,7 +3,7 @@ import React from "react";
 const Services = () => {
   return (
     <section className=" bg-[#161616] text-white">
-      <div className="max-w-[1440px] flex flex-col justify-center items-center mx-auto py-[8rem] gap-[4rem] px-[1rem]">
+      <div className="max-w-[1200px] flex flex-col justify-center items-center mx-auto py-[8rem] gap-[4rem] px-[1rem]">
         <div className="flex flex-col w-full">
           <p className="flex items-center gap-[.5rem] font-[300] tracking-[.45rem] text-[1.3rem]">
             Services
