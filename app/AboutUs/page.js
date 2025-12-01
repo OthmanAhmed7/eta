@@ -1,27 +1,14 @@
+import PageHeader from "@/components/PageHeader";
 import Image from "next/image";
 import React from "react";
 
 const page = () => {
   return (
     <>
-      <section className="relative h-screen w-full bg-cover overflow-hidden bg-no-repeat bg-[#181818] flex flex-col items-center justify-center px-[1rem]">
-        <Image
-          src="/img/subtle-prism.svg"
-          width={2000}
-          height={1000}
-          alt="topography background pattern"
-          className="bg-cover absolute top-0 left-0 opacity-15 h-[100vh]"
-        />
-
-        <p className="text-white font-thin tracking-[.15em] text-[1.25rem]">
-          About Us
-        </p>
-
-        <h1 className="text-white text-[3rem] text-center font-[600]">
-          Our work <br /> blends creativity <br /> with meaningful
-          knowledge-sharing.
-        </h1>
-      </section>
+      <PageHeader
+        pageName={"About Us"}
+        header={"Our work blends creativity with meaningful knowledge-sharing."}
+      />
 
       <section className="flex flex-col m-auto items-left justify-center w-full max-w-[1200px] pt-[5rem] pb-[5rem]">
         <p className="font-thin tracking-[.35rem]">About Us</p>

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const PageHeader = ({ pageName, header }) => {
   return (
@@ -16,7 +17,7 @@ const PageHeader = ({ pageName, header }) => {
           {pageName}
         </p>
 
-        <h1 className="text-white text-[3rem] text-center font-[600]">
+        <h1 className="text-white text-[3rem] text-center font-[600] max-w-[60rem]">
           {header}
         </h1>
       </section>
