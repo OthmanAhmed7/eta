@@ -87,6 +87,9 @@ const Nav = () => {
               <Link href="/Services">
                 <li>Services</li>
               </Link>{" "}
+              <Link href="/Founder">
+                <li>Founder</li>
+              </Link>{" "}
               <Link href="/AboutUs">
                 <li>About Us</li>
               </Link>
