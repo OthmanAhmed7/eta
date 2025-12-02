@@ -21,7 +21,9 @@ const page = () => {
           standards in distinctive interior design.
         </p>
 
-        <h3 className="text-slate-500 text-[1.2rem] font-[600]">Plan</h3>
+        <h3 className="text-slate-500 text-[1.2rem] font-[600] mb-[.5rem]">
+          Plan
+        </h3>
         <p className="text-slate-500 text-[1.2rem] mb-[2rem]">
           At Eta Group, we deliver high-standard, tailored master planning with
           punctuality, professionalism, and precision. For us, it’s a refined
@@ -29,7 +31,9 @@ const page = () => {
           practicality.
         </p>
 
-        <h3 className="text-slate-500 text-[1.2rem] font-[600]">Design</h3>
+        <h3 className="text-slate-500 text-[1.2rem] font-[600] mb-[.5rem]">
+          Design
+        </h3>
         <p className="text-slate-500 text-[1.2rem] mb-[2rem]">
           We believe that a successful design is one that reflects the
           individual needs, lifestyle, and preferences of our clients. Eta Group
@@ -38,7 +42,7 @@ const page = () => {
           modern office spaces and distinctive retail and showroom concepts.
         </p>
 
-        <h3 className="text-slate-500 text-[1.2rem] font-[600]">
+        <h3 className="text-slate-500 text-[1.2rem] font-[600] mb-[.5rem]">
           Implementation
         </h3>
         <p className="text-slate-500 text-[1.2rem] mb-[2rem]">
@@ -51,7 +55,9 @@ const page = () => {
           vision.
         </p>
 
-        <h3 className="text-slate-500 text-[1.2rem] font-[600]">Furniture</h3>
+        <h3 className="text-slate-500 text-[1.2rem] font-[600] mb-[.5rem]">
+          Furniture
+        </h3>
         <p className="text-slate-500 text-[1.2rem] mb-[2rem]">
           Furniture is the soul of any interior, shaping its mood and character.
           We provide fully customized furniture for residential, corporate, and
