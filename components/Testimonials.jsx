@@ -38,7 +38,7 @@ const Testimonials = () => {
                     userId + 1 === item.id
                       ? "text-slate-700 translate-x-[1rem]"
                       : "text-slate-400 translate-x-0"
-                  } transition ease-in-out duration-[1.5s]`}
+                  } cursor-pointer transition ease-out duration-[1.5s]`}
                 >
                   {item.name}
                 </p>
