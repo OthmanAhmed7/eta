@@ -1,10 +1,22 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
 import SectionHeader from "./SectionHeader";
 import { testimonials } from "@/lib/Testimonials";
 
 import { FaQuoteLeft } from "react-icons/fa6";
 
 const Testimonials = () => {
+  const [userId, setUserId] = useState(0);
+
+  useEffect(() => {
+    const interval = setTimeout(() => {
+      setUserId((id) => (id === testimonials.length - 1 ? 0 : id + 1));
+    }, 8000);
+
+    return () => clearInterval(interval);
+  }, [userId]);
+
   return (
     <>
       <section className="flex flex-col items-start max-w-[1200px] m-auto px-[1rem] pb-[2rem]">
@@ -20,7 +32,16 @@ const Testimonials = () => {
           <div className="absolute top-[-1rem] left-[-.5rem] bg-white">
             {testimonials.map((item) => (
               <div key={item.id} className="pb-[.4rem] text-[1.15rem]">
-                <p>{item.name}</p>
+                <p
+                  onClick={() => setUserId(item.id - 1)}
+                  className={`${
+                    userId + 1 === item.id
+                      ? "font-[600] translate-x-[1rem]"
+                      : "font-[300] translate-x-0"
+                  } transition ease-in-out duration-[1.5s]`}
+                >
+                  {item.name}
+                </p>
               </div>
             ))}
           </div>
@@ -32,7 +53,8 @@ const Testimonials = () => {
             {testimonials.map((item) => (
               <div
                 key={item.id}
-                className="flex flex-col items-center text-center py-[4rem]"
+                className="flex flex-col items-center text-center py-[4rem] translate-y-[0rem] transition ease-in-out duration-[1.5s]"
+                style={{ transform: `translateY(-${userId * 21}rem)` }}
               >
                 <FaQuoteLeft className="text-[2rem]" />
 
