@@ -36,10 +36,11 @@ const Testimonials = () => {
                   onClick={() => setUserId(item.id - 1)}
                   className={`${
                     userId + 1 === item.id
-                      ? "font-[600] translate-x-[1rem]"
-                      : "font-[300] translate-x-0"
+                      ? "text-slate-700 translate-x-[1rem]"
+                      : "text-slate-400 translate-x-0"
                   } transition ease-in-out duration-[1.5s]`}
                 >
+                  {/* {userId + 1 === item.id ?  : ""} */}
                   {item.name}
                 </p>
               </div>
