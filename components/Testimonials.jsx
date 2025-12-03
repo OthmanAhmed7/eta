@@ -40,7 +40,6 @@ const Testimonials = () => {
                       : "text-slate-400 translate-x-0"
                   } transition ease-in-out duration-[1.5s]`}
                 >
-                  {/* {userId + 1 === item.id ?  : ""} */}
                   {item.name}
                 </p>
               </div>
@@ -65,7 +64,9 @@ const Testimonials = () => {
 
                 <p className="text-[1.5rem] font-[600]">-{item.name}</p>
 
-                <p className="tracking-[.15rem] font-[300]">{item.jobTitle}</p>
+                <p className="tracking-[.15rem] font-[300] text-slate-500">
+                  {item.jobTitle}
+                </p>
               </div>
             ))}
           </div>
