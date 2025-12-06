@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 
@@ -30,7 +31,11 @@ const ContactUs = () => {
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-3 items-center justify-start gap-[2rem] mt-[4rem]">
-            <div className="flex flex-col flex-1 items-start gap-[2rem]">
+            <Link
+              href={"https://wa.me/201000083181"}
+              target="_blank"
+              className="flex flex-col flex-1 items-start gap-[2rem]"
+            >
               <span className="w-[5rem] h-[1px] bg-[#161616]"></span>
 
               <h4 className="font-[500] tracking-[0.1rem] text-[#161616]">
@@ -38,9 +43,12 @@ const ContactUs = () => {
               </h4>
 
               <p className="text-slate-500 text-[1.1rem]">(002) 01000083181</p>
-            </div>
+            </Link>
 
-            <div className="flex flex-col flex-1 items-start gap-[2rem]">
+            <Link
+              href={"mailto:example@gmail.com"}
+              className="flex flex-col flex-1 items-start gap-[2rem]"
+            >
               <span className="w-[5rem] h-[1px] bg-[#161616]"></span>
 
               <h4 className="font-[500] tracking-[0.1rem] text-[#161616]">
@@ -48,9 +56,13 @@ const ContactUs = () => {
               </h4>
 
               <p className="text-slate-500 text-[1.1rem]">employer@eta.com</p>
-            </div>
+            </Link>
 
-            <div className="flex flex-col flex-1 items-start gap-[2rem]">
+            <Link
+              href={"https://wa.me/201000083181"}
+              target="_blank"
+              className="flex flex-col flex-1 items-start gap-[2rem]"
+            >
               <span className="w-[5rem] h-[1px] bg-[#161616]"></span>
 
               <h4 className="font-[500] tracking-[0.1rem] text-[#161616]">
@@ -58,7 +70,7 @@ const ContactUs = () => {
               </h4>
 
               <p className="text-slate-500 text-[1.1rem]">Chat With Us</p>
-            </div>
+            </Link>
           </div>
         </div>
 
