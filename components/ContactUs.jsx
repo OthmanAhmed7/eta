@@ -123,7 +123,15 @@ const ContactUs = () => {
 
             {/* Message */}
             <div className="relative w-full group">
-              <label className="floating-textarea-label">Message</label>
+              <label
+                className={`absolute ${
+                  !messageInput
+                    ? "top-[8%] bg-transparent"
+                    : "top-[-9%] bg-white"
+                }  left-[3%] text-slate-500 pointer-events-none group-focus-within:bg-white group-focus-within:top-[-9%] group-focus-within:left-[1.5%] group-focus-within:text-[.9rem] group-focus-within:px-[.1rem] transition-all duration-500 ease-out`}
+              >
+                Message
+              </label>
 
               <textarea
                 className="floating-textarea"

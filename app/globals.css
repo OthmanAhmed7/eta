@@ -52,18 +52,6 @@ svg .secondary {
   -webkit-text-stroke: 0.8px #fff;
 }
 
-.floating-label {
-  @apply absolute top-[20%] left-[6%] text-slate-500 bg-transparent transition-all duration-300 pointer-events-none group-focus-within:bg-white group-focus-within:top-[-25%] group-focus-within:left-[4%] group-focus-within:text-[0.85rem] group-focus-within:px-1;
-}
-
-.floating-full-label {
-  @apply absolute top-[20%] left-[3%] text-slate-500 bg-transparent transition-all duration-300 pointer-events-none group-focus-within:bg-white group-focus-within:top-[-25%] group-focus-within:left-[4%] group-focus-within:text-[0.85rem] group-focus-within:px-1;
-}
-
-.floating-textarea-label {
-  @apply absolute top-[8%] left-[3%] text-slate-500 bg-transparent pointer-events-none group-focus-within:bg-white group-focus-within:top-[-9%] group-focus-within:left-[1.5%] group-focus-within:text-[.9rem] group-focus-within:px-[.1rem] transition-all duration-500 ease-out;
-}
-
 .floating-input {
   @apply w-full h-10 border border-slate-500 pl-[1rem] outline-none focus:border-black;
 }
