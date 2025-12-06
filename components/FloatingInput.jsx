@@ -4,9 +4,13 @@ const FloatingInput = ({ label, type, value, name, onChange, required }) => {
   return (
     <div className="relative w-full group">
       <label
-        className={`absolute bg-white ${
+        className={`absolute ${
           name === "name" || name === "phone" ? "left-[6%]" : "left-[3%]"
-        } ${value ? "top-[-25%] text-[0.85rem] px-1" : "top-[20%]"} ${
+        } ${
+          value
+            ? "top-[-25%] text-[0.85rem] px-1 bg-white"
+            : "top-[20%] bg-transparent"
+        } ${
           name === "name" || name === "phone"
             ? "group-focus-within:left-[4%]"
             : "group-focus-within:left-[2%]"
