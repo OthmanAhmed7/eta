@@ -81,8 +81,8 @@ const ContactUs = () => {
 
         <div className="flex-1 w-full self-end">
           <form
-            action="https://formsubmit.co/othmanahmed258@gmail.com"
-            method="POST"
+            action="https://formspree.io/f/{form_id}"
+            method="post"
             className="flex flex-col items-center justify-center gap-8 w-full"
           >
             {/* Name + Phone */}
@@ -93,7 +93,7 @@ const ContactUs = () => {
                 label="Name"
                 type="text"
                 value={nameInput}
-                name={"name"}
+                name="name"
                 onChange={(e) => setNameInput(e.target.value)}
                 required
               />
@@ -104,7 +104,7 @@ const ContactUs = () => {
                 label="Phone"
                 type="tel"
                 value={phoneInput}
-                name={"phone"}
+                name="phone"
                 onChange={(e) => setPhoneInput(e.target.value)}
                 required
               />
