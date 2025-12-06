@@ -2,10 +2,15 @@
 
 import Link from "next/link";
 import React, { useState } from "react";
+import FloatingInput from "./FloatingInput";
+
 import { MdArrowOutward } from "react-icons/md";
 
 const ContactUs = () => {
   const [nameInput, setNameInput] = useState();
+  const [phoneInput, setPhoneInput] = useState();
+  const [emailInput, setEmailInput] = useState();
+  const [messageInput, setMessageInput] = useState();
 
   console.log(nameInput);
   return (
@@ -76,66 +81,64 @@ const ContactUs = () => {
 
         <div className="flex-1 w-full self-end">
           <form
-            action=""
-            className="flex flex-col items-center justify-center gap-[2rem]"
+            action="https://formsubmit.co/othmanahmed258@gmail.com"
+            method="POST"
+            className="flex flex-col items-center justify-center gap-8 w-full"
           >
-            <div className="flex items-center gap-[1.5rem] w-full">
-              <div className="relative w-full group">
-                <input
-                  type="text"
-                  value={nameInput}
-                  onChange={(e) => {
-                    setNameInput(e.target.value);
-                  }}
-                  className="w-full h-[2.5rem] border border-slate-500"
-                />
-
-                <span
-                  className={`absolute top-[20%] left-[6%] text-slate-500  group-focus-within:bg-white group-focus-within:top-[-25%] group-focus-within:left-[4%] group-focus-within:text-[.9rem] group-focus-within:px-[.1rem] transition-all duration-500 ease-out ${
-                    nameInput === true
-                      ? "bg-white top-[-25%] left-[4%] text-[.9rem] px-[.1rem]"
-                      : ""
-                  }`}
-                >
-                  Name
-                </span>
-              </div>
-
-              <div className="relative w-full group">
-                <input
-                  type="text"
-                  className="w-full h-[2.5rem] border border-slate-500"
-                />
-
-                <span className="absolute top-[20%] left-[6%] text-slate-500  group-focus-within:bg-white group-focus-within:top-[-25%] group-focus-within:left-[4%] group-focus-within:text-[.9rem] group-focus-within:px-[.1rem] transition-all duration-500 ease-out">
-                  Phone
-                </span>
-              </div>
-            </div>
-
-            <div className="relative w-full group">
-              <input
-                type="email"
-                className="w-full h-[2.5rem] border border-slate-500"
+            {/* Name + Phone */}
+            <div className="flex items-center gap-6 w-full">
+              {/* Name */}
+              <FloatingInput
+                className={"floating-label"}
+                label="Name"
+                type="text"
+                value={nameInput}
+                name={"name"}
+                onChange={(e) => setNameInput(e.target.value)}
+                required
               />
 
-              <span className="absolute top-[20%] left-[3%] text-slate-500  group-focus-within:bg-white group-focus-within:top-[-25%] group-focus-within:left-[1.5%] group-focus-within:text-[.9rem] group-focus-within:px-[.1rem] transition-all duration-500 ease-out">
-                Email
-              </span>
+              {/* Phone */}
+              <FloatingInput
+                className={"floating-label"}
+                label="Phone"
+                type="tel"
+                value={phoneInput}
+                name={"phone"}
+                onChange={(e) => setPhoneInput(e.target.value)}
+                required
+              />
             </div>
 
+            {/* Email */}
+            <FloatingInput
+              className={"floating-full-label"}
+              label="Email"
+              type="email"
+              value={emailInput}
+              name={"email"}
+              onChange={(e) => setEmailInput(e.target.value)}
+              required
+            />
+
+            {/* Message */}
             <div className="relative w-full group">
+              <label className="floating-textarea-label">Message</label>
+
               <textarea
-                name=""
-                id=""
-                className="w-full h-[8rem] border border-slate-500"
+                className="floating-textarea"
+                name="message"
+                value={messageInput}
+                onChange={(e) => setMessageInput(e.target.value)}
+                required
               ></textarea>
-              <span className="absolute top-[8%] left-[3%] text-slate-500  group-focus-within:bg-white group-focus-within:top-[-9%] group-focus-within:left-[1.5%] group-focus-within:text-[.9rem] group-focus-within:px-[.1rem] transition-all duration-500 ease-out">
-                Message
-              </span>
             </div>
 
-            <button className="flex items-center self-end mt-[.5rem] gap-[.8rem] w-[5rem] h-[1.5rem] text-slate-600">
+            {/* Button */}
+            <button
+              type="submit"
+              className="flex items-center self-end mt-2 gap-2 px-4 py-2 text-slate-600 hover:text-black transition-colors"
+            >
               Submit <MdArrowOutward />
             </button>
           </form>
