@@ -79,12 +79,22 @@ const ContactUs = () => {
           </div>
         </div>
 
+        {/* Contact Us Form */}
         <div className="flex-1 w-full self-end">
           <form
-            action="https://formspree.io/f/{form_id}"
-            method="post"
+            action="https://formspree.io/f/xblnkwvk"
+            method="POST"
+            target="_blank"
             className="flex flex-col items-center justify-center gap-8 w-full"
           >
+            {/* FormSubmit Setup for _captcha & _next */}
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://eta-blue.vercel.app/"
+            />
+
             {/* Name + Phone */}
             <div className="flex items-center gap-6 w-full">
               {/* Name */}
