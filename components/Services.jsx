@@ -16,7 +16,7 @@ const Services = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row items-center justify-center gap-[2rem]">
-          <div className="relative px-[1.5rem] pt-[2.5rem] border overflow-hidden border-white h-[24rem] bg-[url(/img/furniture.png)] bg-cover group">
+          <div className="relative px-[1.5rem] pt-[2.5rem] border overflow-hidden border-white h-[24rem] bg-[url(/img/furniture.avif)] bg-cover group">
             <div className="absolute top-0 left-0 bg-[#161616] w-full h-full z-10 group-hover:opacity-80 transition ease-out duration-700"></div>
             <p className="z-20 relative font-[800] text-[4rem] stroke text-transparent">
               01
@@ -40,7 +40,7 @@ const Services = () => {
             </a>
           </div>
 
-          <div className="relative px-[1.5rem] pt-[2.5rem] border overflow-hidden border-white h-[24rem] bg-[url(/img/interior.png)] bg-cover group">
+          <div className="relative px-[1.5rem] pt-[2.5rem] border overflow-hidden border-white h-[24rem] bg-[url(/img/interior.avif)] bg-cover group">
             <div className="absolute top-0 left-0 bg-[#161616] w-full h-full z-10 group-hover:opacity-80 transition ease-out duration-700"></div>
             <p className="z-20 relative font-[800] text-[4rem] stroke text-transparent">
               02
@@ -64,7 +64,7 @@ const Services = () => {
             </a>
           </div>
 
-          <div className="relative px-[1.5rem] pt-[2.5rem] border overflow-hidden border-white h-[24rem] bg-[url(/img/exterior.png)] bg-cover group">
+          <div className="relative px-[1.5rem] pt-[2.5rem] border overflow-hidden border-white h-[24rem] bg-[url(/img/exterior.avif)] bg-cover group">
             <div className="absolute top-0 left-0 bg-[#161616] w-full h-full z-10 group-hover:opacity-80 transition ease-out duration-700"></div>
             <p className="z-20 relative font-[800] text-[4rem] stroke text-transparent">
               03

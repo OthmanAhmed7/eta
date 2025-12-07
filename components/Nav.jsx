@@ -32,7 +32,7 @@ const Nav = () => {
       <nav className="flex justify-between items-center max-w-[1440px] w-full py-[1rem]">
         <a href="/">
           <Image
-            src="/img/logo.png"
+            src="/img/logo.avif"
             height={1000}
             width={1000}
             alt="Eta logo"
