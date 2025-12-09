@@ -6,17 +6,17 @@ import SectionHeader from "@/components/SectionHeader";
 const page = () => {
   return (
     <>
-      <PageHeader pageName={"Contact Us"} header={"Let Us Connect With You."} />
+      <PageHeader pageName={"Contact Us"} header={"Connect With Us."} />
 
       <ContactUs />
 
-      <section className="flex flex-col m-auto items-start max-w-[1200px] pb-[5rem]">
+      <section className="flex flex-col m-auto items-start max-w-[1200px] pb-[5rem] px-[1rem]">
         <SectionHeader
           header={"Locations"}
           title={"Choose The Nearest Location"}
         />
 
-        <section className="grid grid-cols-3 gap-[12.4rem]">
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1rem] md:gap-[5rem] lg:gap-[10rem]">
           <section className="bg-[#e7e7e7] p-[2.5rem] flex flex-col cursor-pointer group hover:bg-[#161616] hover:text-white transition ease-in-out duration-500">
             <span className="w-[5rem] h-[1px] bg-[#161616] mb-[1rem] group-hover:bg-white"></span>
 
