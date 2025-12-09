@@ -8,14 +8,29 @@ import { FaQuoteLeft } from "react-icons/fa6";
 
 const Testimonials = () => {
   const [userId, setUserId] = useState(0);
+  const [isSmall, setIsSmall] = useState(false);
+  const [isMedium, setIsMedium] = useState(false);
 
   useEffect(() => {
     const interval = setTimeout(() => {
       setUserId((id) => (id === testimonials.length - 1 ? 0 : id + 1));
     }, 8000);
 
-    return () => clearInterval(interval);
+    return () => clearTimeout(interval);
   }, [userId]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      setIsSmall(width < 375);
+      setIsMedium(width >= 375 && width < 415);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <>
@@ -28,7 +43,7 @@ const Testimonials = () => {
 
       <section className="flex items-start justify-start gap-[5rem] max-w-[1200px] m-auto h-[20rem] px-[1rem]">
         {/* Testimonials Names */}
-        <section className="flex-[1] w-full h-full relative border-[3px] px-[2rem]">
+        <section className="hidden lg:flex flex-[1] w-full h-full relative border-[3px] px-[2rem]">
           <div className="absolute top-[-1rem] left-[-.5rem] bg-white">
             {testimonials.map((item) => (
               <div key={item.id} className="relative pb-[.4rem] text-[1.15rem]">
@@ -58,12 +73,22 @@ const Testimonials = () => {
             {testimonials.map((item) => (
               <div
                 key={item.id}
-                className="flex flex-col items-center text-center py-[4rem] translate-y-[0rem] transition ease-out duration-[1.5s]"
-                style={{ transform: `translateY(-${userId * 21}rem)` }}
+                className={`flex flex-col items-center text-center ${
+                  isSmall
+                    ? "py-[.8rem]"
+                    : isMedium
+                    ? "py-[2rem]"
+                    : "py-[3.9rem]"
+                } transition ease-out duration-[1.5s]`}
+                style={{
+                  transform: `translateY(-${
+                    userId * (isSmall ? 20 : isMedium ? 15 : 21)
+                  }rem)`,
+                }}
               >
                 <FaQuoteLeft className="text-[2rem]" />
 
-                <p className="py-[1rem] text-[1.25rem] leading-[1.8rem] text-slate-500 w-[40rem]">
+                <p className="py-[1rem] px-[1.5rem] text-[1.25rem] leading-[1.8rem] text-slate-500 max-w-[40rem]">
                   {item.text}
                 </p>
 
