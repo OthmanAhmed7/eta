@@ -10,7 +10,7 @@ const page = () => {
         header={"Explore What We Can Do For You"}
       />
 
-      <section className="flex flex-col m-auto items-start max-w-[1200px] py-[5rem]">
+      <section className="flex flex-col m-auto items-start max-w-[1200px] py-[5rem] px-[1rem]">
         <SectionHeader header={"Services"} title={"Our Way of Serving You"} />
 
         <p className="text-slate-500 text-[1.2rem] mb-[2rem]">
