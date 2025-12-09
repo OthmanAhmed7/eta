@@ -1,15 +1,17 @@
-import AboutUs from "@/components/AboutUs";
-import Articles from "@/components/Articles";
-import ContactUs from "@/components/ContactUs";
-import Hero from "@/components/Hero";
-import LastProjects from "@/components/LastProjects";
-import Nav from "@/components/Nav";
-import Services from "@/components/Services";
-import Testimonials from "@/components/Testimonials";
+import { Suspense, lazy } from "react";
+
+const Nav = lazy(() => import("../components/Nav"));
+const Hero = lazy(() => import("../components/Hero"));
+const AboutUs = lazy(() => import("../components/AboutUs"));
+const Articles = lazy(() => import("../components/Articles"));
+const ContactUs = lazy(() => import("../components/ContactUs"));
+const LastProjects = lazy(() => import("../components/LastProjects"));
+const Services = lazy(() => import("../components/Services"));
+const Testimonials = lazy(() => import("../components/Testimonials"));
 
 export default function Home() {
   return (
-    <div>
+    <Suspense fallback={<p>Loading...</p>}>
       <Nav />
       <Hero />
       <AboutUs />
@@ -18,6 +20,6 @@ export default function Home() {
       <Articles />
       <Testimonials />
       <ContactUs />
-    </div>
+    </Suspense>
   );
 }
