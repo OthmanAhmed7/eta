@@ -11,7 +11,7 @@ const page = () => {
         header={"Our work blends creativity with meaningful knowledge-sharing."}
       />
 
-      <section className="flex flex-col m-auto items-left justify-center w-full max-w-[1200px] pt-[5rem] pb-[5rem]">
+      <section className="flex flex-col m-auto items-left justify-center w-full max-w-[1200px] pt-[5rem] pb-[5rem] px-[1rem]">
         <SectionHeader
           header={"About Us"}
           title={"Our Attention Is For Your Comfort."}
