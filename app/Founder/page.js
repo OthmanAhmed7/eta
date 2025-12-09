@@ -9,7 +9,7 @@ import { FaTiktok } from "react-icons/fa6";
 const page = () => {
   return (
     <>
-      <section className="flex items-start gap-[4rem] max-w-[1200px] m-auto py-[10rem]">
+      <section className="flex flex-col-reverse lg:flex-row items-start gap-[4rem] max-w-[1200px] m-auto py-[10rem] px-[1rem]">
         {/* First Column */}
         <section className="flex-1">
           <div>
