@@ -28,9 +28,9 @@ const Services = () => {
             </h3>
 
             <p className="z-20 relative text-slate-300 mt-[1rem] text-[1.125rem] font-[300] translate-y-[350%] group-hover:translate-y-0 transition duration-700 ease-out">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-              minima quibusdam labore reprehenderit voluptatibus similique neque
-              est vero vitae blanditiis!
+              Custom furniture solutions that reflect your unique taste. From
+              concept to creation, we design pieces that perfectly complement
+              your space and lifestyle.
             </p>
 
             <Link
@@ -52,9 +52,9 @@ const Services = () => {
             </h3>
 
             <p className="z-20 relative text-slate-300 mt-[1rem] text-[1.125rem] font-[300] translate-y-[350%] group-hover:translate-y-0 transition duration-700 ease-out">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-              minima quibusdam labore reprehenderit voluptatibus similique neque
-              est vero vitae blanditiis!
+              Transform your indoor spaces into havens of comfort and style. Our
+              interior finishing expertise brings warmth, elegance, and
+              functionality to every room.
             </p>
 
             <Link
@@ -76,9 +76,9 @@ const Services = () => {
             </h3>
 
             <p className="z-20 relative text-slate-300 mt-[1rem] text-[1.125rem] font-[300] translate-y-[350%] group-hover:translate-y-0 transition duration-700 ease-out">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
-              minima quibusdam labore reprehenderit voluptatibus similique neque
-              est vero vitae blanditiis!
+              First impressions matter. We craft stunning exterior finishes that
+              protect your property while showcasing its beauty and character
+              for years to come.
             </p>
 
             <Link
