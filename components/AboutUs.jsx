@@ -38,16 +38,16 @@ const AboutUs = () => {
           </div>
 
           <p className="text-slate-500 w-full text-[1.2rem]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
-            ex dolorem? Praesentium asperiores enim sed similique, dolore vitae
-            laboriosam dolor. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Incidunt, ex dolorem? Praesentium asperiores enim sed
-            similique, dolore vitae laboriosam dolor.
+            Eta Group is a premier finishing company dedicated to excellence in
+            every detail. With years of experience and a passion for perfection,
+            we transform spaces into masterpieces. Our skilled team combines
+            innovative techniques with quality craftsmanship to deliver results
+            that exceed expectations and bring your vision to life.
           </p>
 
           <p className="text-slate-500 max-w-[30rem] text-[1.2rem]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem, optio.
+            Trust, quality, and customer satisfaction drive everything we do at
+            Eta Group.
           </p>
         </div>
       </div>
