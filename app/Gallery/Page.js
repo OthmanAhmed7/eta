@@ -6,7 +6,7 @@ import { IoIosArrowUp } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 import Link from "next/link";
 
-const Page = () => {
+const page = () => {
   return (
     <>
       <section>
@@ -77,4 +77,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default page;
