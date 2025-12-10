@@ -28,11 +28,10 @@ const ContactUs = () => {
       <div className="flex flex-col lg:flex-row items-center justify-center gap-[2rem] lg:gap-[6rem]">
         <div className="flex-1 flex-col gap-[2rem] my-[2.5rem]">
           <p className="text-slate-500 text-[1.2rem]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-            necessitatibus dolorum vitae obcaecati? Totam officiis hic inventore
-            adipisci esse maiores nisi similique doloremque voluptas odio?
-            inventore adipisci esse maiores nisi similique doloremque voluptas
-            odio?
+            Now, as you've learned about our finishing expertise, it's time to
+            reach out and start building something amazing together. Our team at
+            Eta Group is ready to listen, advise, and bring your vision to life.
+            Let's connect today and lay the foundation for your perfect space!
           </p>
 
           <div className="grid grid-cols-2 md:grid-cols-3 items-center justify-start gap-[2rem] mt-[4rem]">
