@@ -2,11 +2,15 @@ import React from "react";
 import { projects } from "@/lib/Projects";
 import Image from "next/image";
 
+import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
+import Link from "next/link";
+
 const Page = () => {
   return (
     <>
       <section>
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <section key={project.id} id={project.id}>
             <section
               className="relative h-screen w-full bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center px-[1rem]"
@@ -18,20 +22,49 @@ const Page = () => {
               </p>
             </section>
 
-            <section className="py-[5rem]">
-              {project.projects.map((site) => (
-                <section key={site.id} className="grid grid-cols-3">
-                  <div>
-                    <Image
-                      src={site.img}
-                      alt={site.title}
-                      width={120}
-                      height={120}
-                    />
-                    <p>{site.title}</p>
-                  </div>
-                </section>
-              ))}
+            <section className="flex flex-col-reverse lg:flex-row items-center justify-between lg:gap-[3rem] max-w-[1200px] m-auto px-[1rem]">
+              <section className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-[2rem] py-[5rem] w-full">
+                {project.projects.map((site) => (
+                  <section key={site.id}>
+                    <div className="flex flex-col items-center justify-center gap-[1rem]">
+                      <Image
+                        src={site.img}
+                        alt={site.title}
+                        width={200}
+                        height={120}
+                        className="overflow-hidden bg-cover bg-center w-[15rem] h-[10rem]"
+                      />
+                      <p className="font-[600] text-[1.25rem]">{site.title}</p>
+                    </div>
+                  </section>
+                ))}
+              </section>
+
+              <section className="flex lg:flex-col items-center justify-center gap-[2.5rem] pt-[5rem]">
+                {index != 0 ? (
+                  <Link
+                    href={`#${projects[index - 1].id}`}
+                    className="flex lg:flex-col items-center justify-center gap-[1rem] text-[1.15rem]"
+                  >
+                    <IoIosArrowUp />
+                    <p>PREV</p>
+                  </Link>
+                ) : (
+                  ""
+                )}
+
+                {index != projects.length - 1 ? (
+                  <Link
+                    href={`#${projects[index + 1].id}`}
+                    className="flex lg:flex-col items-center justify-center gap-[1rem] text-[1.15rem]"
+                  >
+                    <p>NEXT</p>
+                    <IoIosArrowDown />
+                  </Link>
+                ) : (
+                  ""
+                )}
+              </section>
             </section>
           </section>
         ))}
