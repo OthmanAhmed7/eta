@@ -26,9 +26,9 @@ const Footer = () => {
 
           <div className="w-full flex flex-col md:flex-row gap-[1.5rem] md:gap-0 items-start justify-between text-white">
             <p className="flex flex-1 text-[1.125rem] max-w-[43.5rem] font-[300] leading-[1.8rem]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              totam deleniti itaque atque sit commodi quod exercitationem quam
-              ea ex?
+              Eta Group - Transforming spaces with expert finishing solutions.
+              Quality craftsmanship, trusted service, and exceptional results
+              every time.
             </p>
 
             <div className="flex flex-col flex-1 items-end">
