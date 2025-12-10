@@ -27,13 +27,17 @@ const Page = () => {
                 {project.projects.map((site) => (
                   <section key={site.id}>
                     <div className="flex flex-col items-center justify-center gap-[1rem]">
-                      <Image
-                        src={site.img}
-                        alt={site.title}
-                        width={200}
-                        height={120}
-                        className="overflow-hidden bg-cover bg-center w-[15rem] h-[10rem]"
-                      />
+                      <div className="relative overflow-hidden group">
+                        <Image
+                          src={site.img}
+                          alt={site.title}
+                          width={200}
+                          height={120}
+                          className="bg-cover bg-center w-[15rem] h-[10rem] scale-125 group-hover:translate-y-[-13%] transition duration-500 ease-out"
+                        />
+
+                        <div className="absolute top-0 left-0 w-full h-full group-hover:bg-black/30 transition duration-500 ease-out"></div>
+                      </div>
                       <p className="font-[600] text-[1.25rem]">{site.title}</p>
                     </div>
                   </section>
