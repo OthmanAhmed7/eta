@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Services = () => {
@@ -32,12 +33,12 @@ const Services = () => {
               est vero vitae blanditiis!
             </p>
 
-            <a
-              href=""
+            <Link
+              href="/Services"
               className="z-20 absolute bottom-[1.05rem] left-[1.5rem] font-[300]"
             >
               Read More
-            </a>
+            </Link>
           </div>
 
           <div className="relative px-[1.5rem] pt-[2.5rem] border overflow-hidden border-white h-[24rem] bg-[url(/img/interior.avif)] bg-cover group">
@@ -56,12 +57,12 @@ const Services = () => {
               est vero vitae blanditiis!
             </p>
 
-            <a
-              href=""
+            <Link
+              href="/Services"
               className="z-20 absolute bottom-[1.05rem] left-[1.5rem] font-[300]"
             >
               Read More
-            </a>
+            </Link>
           </div>
 
           <div className="relative px-[1.5rem] pt-[2.5rem] border overflow-hidden border-white h-[24rem] bg-[url(/img/exterior.avif)] bg-cover group">
@@ -80,12 +81,12 @@ const Services = () => {
               est vero vitae blanditiis!
             </p>
 
-            <a
-              href=""
+            <Link
+              href="/Services"
               className="z-20 absolute bottom-[1.05rem] left-[1.5rem] font-[300]"
             >
               Read More
-            </a>
+            </Link>
           </div>
         </div>
       </div>
