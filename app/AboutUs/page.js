@@ -2,9 +2,7 @@ import PageHeader from "@/components/PageHeader";
 import SectionHeader from "@/components/SectionHeader";
 import React from "react";
 
-export default async function page() {
-  await new Promise((resolve) => setTimeout(resolve, 10000));
-
+const page = () => {
   return (
     <>
       <PageHeader
@@ -55,6 +53,6 @@ export default async function page() {
       </section>
     </>
   );
-}
+};
 
-// export default page;
+export default page;
