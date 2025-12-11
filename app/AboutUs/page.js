@@ -1,9 +1,10 @@
 import PageHeader from "@/components/PageHeader";
 import SectionHeader from "@/components/SectionHeader";
-import Image from "next/image";
 import React from "react";
 
-const page = () => {
+export default async function page() {
+  await new Promise((resolve) => setTimeout(resolve, 10000));
+
   return (
     <>
       <PageHeader
@@ -54,6 +55,6 @@ const page = () => {
       </section>
     </>
   );
-};
+}
 
-export default page;
+// export default page;
