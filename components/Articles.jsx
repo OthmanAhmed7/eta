@@ -9,7 +9,6 @@ import Link from "next/link";
 const Articles = () => {
   const [articlesNumber, setArticlesNumber] = useState(3);
   const [loading, setLoading] = useState(false);
-  const [hideButton, setHideButton] = useState(false);
   const [timeoutId, setTimeoutId] = useState(null);
 
   useEffect(() => {
@@ -21,7 +20,6 @@ const Articles = () => {
   const delayTime = () => {
     setLoading(true);
     const id = setTimeout(() => {
-      setHideButton(true);
       setArticlesNumber(articles.length);
     }, 1500);
     setTimeoutId(id);
@@ -41,7 +39,7 @@ const Articles = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem]">
         {articles.map((article) =>
-          i.id <= articlesNumber ? (
+          article.id <= articlesNumber ? (
             <div
               key={article.id}
               className="relative flex flex-col gap-[1rem] overflow-hidden group"
@@ -67,7 +65,7 @@ const Articles = () => {
               </div>
 
               <Link
-                href={`/ArticlesCard/${article.id}`}
+                href={`/ArticleCard/${article.id}`}
                 className="z-20 absolute bottom-[1.05rem] left-[1.5rem] font-[300] text-white"
               >
                 Read More
