@@ -28,6 +28,7 @@ const page = () => {
                   <section key={site.id}>
                     <Link
                       href={`/ProjectCard/${site.id}`}
+                      target="_blank"
                       className="flex flex-col items-center justify-center gap-[1rem]"
                     >
                       <div className="relative overflow-hidden group">
