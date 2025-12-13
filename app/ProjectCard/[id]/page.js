@@ -13,6 +13,17 @@ const page = async ({ params }) => {
           <h1 className="text-[2.5rem] font-[700] mb-[1rem]">
             {projects.title}
           </h1>
+
+          <div>
+            {projects.description.map((desc) => (
+              <p
+                key={desc.id}
+                className="text-[1.25rem] text-slate-600 mb-[1.5rem] tracking-[.02rem] leading-[2rem]"
+              >
+                {desc.paragraph}
+              </p>
+            ))}
+          </div>
         </section>
 
         <section className="flex-1">
