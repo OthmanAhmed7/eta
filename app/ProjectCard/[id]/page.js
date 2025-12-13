@@ -10,7 +10,9 @@ const page = async ({ params }) => {
     <>
       <section className="flex items-start gap-[3rem] max-w-[1200px] m-auto py-[5rem] px-[1rem]">
         <section className="flex-[2]">
-          <h1>{projects.title}</h1>
+          <h1 className="text-[2.5rem] font-[700] mb-[1rem]">
+            {projects.title}
+          </h1>
         </section>
 
         <section className="flex-1">
