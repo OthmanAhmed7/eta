@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { articles } from "@/lib/Articles";
 import Image from "next/image";
 import Button from "./SecodaryButton";
+import Link from "next/link";
 
 const Articles = () => {
   const [articlesNumber, setArticlesNumber] = useState(3);
@@ -39,33 +40,38 @@ const Articles = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem]">
-        {articles.map((i) =>
+        {articles.map((article) =>
           i.id <= articlesNumber ? (
             <div
-              key={i.id}
+              key={article.id}
               className="relative flex flex-col gap-[1rem] overflow-hidden group"
             >
               <div className="absolute z-10 top-0 left-0 w-[100%] h-[100%] bg-[#161616] opacity-0 group-hover:opacity-80 transition duration-500 ease-out"></div>
               <div className="group-hover:scale-125 transition duration-500 ease-out">
-                <Image width={500} height={500} alt={i.title} src={i.image} />
+                <Image
+                  width={500}
+                  height={500}
+                  alt={article.title}
+                  src={article.image}
+                />
               </div>
 
               <div className="absolute top-[35%] px-[1.5rem] text-center z-20">
                 <h3 className="font-[500] text-[1.5rem] tracking-[.03rem] mb-[1rem] py-[.5rem] bg-white">
-                  {i.title}
+                  {article.title}
                 </h3>
 
                 <p className="text-white text-[1.125rem] font-[400] translate-y-[200%] group-hover:translate-y-0 transition duration-500 ease-out">
-                  {i.text}
+                  {article.text}
                 </p>
               </div>
 
-              <a
-                href={i.link}
+              <Link
+                href={`/ArticlesCard/${article.id}`}
                 className="z-20 absolute bottom-[1.05rem] left-[1.5rem] font-[300] text-white"
               >
                 Read More
-              </a>
+              </Link>
             </div>
           ) : (
             ""
