@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { lastWork } from "../lib/LatestWork";
 import Button from "./SecodaryButton";
+import Link from "next/link";
 
 const LastProjects = () => {
   const [hideButton, setHideButton] = useState(false);
@@ -39,24 +40,24 @@ const LastProjects = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-[2rem]">
-        {lastWork.map((i) =>
-          i.id <= projectNumber ? (
-            <div key={i.id}>
+        {lastWork.map((project) =>
+          project.id <= projectNumber ? (
+            <Link href={`/ProjectCard/${project.id}`} key={project.id}>
               <div className="relative w-full h-[20rem] overflow-hidden group">
                 <Image
                   width={500}
                   height={500}
-                  alt={i.title}
-                  src={i.image}
+                  alt={project.title}
+                  src={project.image}
                   className="group-hover:translate-y-[-10%] transition duration-700 ease-out"
                 />
                 <div className="absolute top-0 left-0 w-full h-full group-hover:bg-black/30 transition duration-700 ease-out"></div>
               </div>
 
               <p className="text-center mt-[1.5rem] font-[500] text-[1.25rem]">
-                {i.title}
+                {project.title}
               </p>
-            </div>
+            </Link>
           ) : (
             ""
           )
