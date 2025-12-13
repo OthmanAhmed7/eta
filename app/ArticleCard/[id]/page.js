@@ -1,6 +1,7 @@
 import React from "react";
 import { articles } from "@/lib/Articles";
 import Image from "next/image";
+import Link from "next/link";
 
 const page = async ({ params }) => {
   const resolveParams = await params;
@@ -22,7 +23,7 @@ const page = async ({ params }) => {
           ))}
         </section>
 
-        <section className="flex-1 flex flex-col w-full">
+        <section className="flex-1">
           <Image
             alt={article.title}
             src={article.image}
@@ -30,11 +31,6 @@ const page = async ({ params }) => {
             height={1000}
             className="max-w-[500px]"
           />
-
-          <div className="flex items-start justify-between w-full">
-            {article.author}
-            {article.timeStamp}
-          </div>
         </section>
       </article>
     </>
