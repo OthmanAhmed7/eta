@@ -42,7 +42,11 @@ const LastProjects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-[2rem]">
         {lastWork.map((project) =>
           project.id <= projectNumber ? (
-            <Link href={`/ProjectCard/${project.id}`} key={project.id}>
+            <Link
+              href={`/ProjectCard/${project.id}`}
+              target="_blank"
+              key={project.id}
+            >
               <div className="relative w-full h-[20rem] overflow-hidden group">
                 <Image
                   width={500}
