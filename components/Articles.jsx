@@ -66,6 +66,7 @@ const Articles = () => {
 
               <Link
                 href={`/ArticleCard/${article.id}`}
+                target="_blank"
                 className="z-20 absolute bottom-[1.05rem] left-[1.5rem] font-[300] text-white"
               >
                 Read More
