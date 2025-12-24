@@ -1,4 +1,7 @@
-import { Suspense, lazy } from "react";
+"use client";
+
+import LocomotiveScroll from "locomotive-scroll";
+import { Suspense, lazy, useEffect } from "react";
 
 const Nav = lazy(() => import("../components/Nav"));
 const Hero = lazy(() => import("../components/Hero"));
@@ -10,6 +13,12 @@ const Services = lazy(() => import("../components/Services"));
 const Testimonials = lazy(() => import("../components/Testimonials"));
 
 export default function Home() {
+  useEffect(() => {
+    (async () => {
+      const LocomotiveScroll = (await import("locomotive-scroll")).default;
+      const locomotiveScroll = new LocomotiveScroll();
+    })();
+  }, []);
   return (
     <Suspense fallback={<p>Loading...</p>}>
       <Nav />

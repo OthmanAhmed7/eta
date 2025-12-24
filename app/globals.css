@@ -10,6 +10,11 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
 rect {
   fill: none;
   width: 13rem;

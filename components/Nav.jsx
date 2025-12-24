@@ -4,8 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-import { RiMenuFoldFill } from "react-icons/ri";
-import { RiMenuUnfoldFill } from "react-icons/ri";
+import { SlMenu } from "react-icons/sl";
 
 const Nav = () => {
   const [toggleNav, setToggleNav] = useState(false);
@@ -40,7 +39,7 @@ const Nav = () => {
           />
         </a>
 
-        <RiMenuFoldFill
+        <SlMenu
           className={`w-[2rem] h-[2rem] cursor-pointer ${
             switchColor === true ? "text-black" : "text-white"
           } transition duration-500 ease-out`}
@@ -68,7 +67,7 @@ const Nav = () => {
           toggleNav === false ? "translate-x-[100%]" : ""
         } h-[100vh] bg-white right-0 top-0 z-30 w-[75%] lg:w-[45%] transition duration-700 ease-out overflow-scroll`}
       >
-        <RiMenuUnfoldFill
+        <SlMenu
           className="absolute z-50 right-[5rem] top-[3rem] w-[2rem] h-[2rem] cursor-pointer"
           onClick={() => {
             setToggleNav(false);
