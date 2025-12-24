@@ -1,15 +1,14 @@
 import React from "react";
 import { articles } from "@/lib/Articles";
 import Image from "next/image";
-import Link from "next/link";
 
 const page = async ({ params }) => {
   const resolveParams = await params;
   const article = articles.find((a) => a.id === parseInt(resolveParams.id));
   return (
     <>
-      <article className="flex items-start justify-center gap-[3rem] m-auto max-w-[1200px] py-[5rem] px-[1rem]">
-        <section className="flex-2">
+      <article className="flex flex-col-reverse lg:flex-row items-start justify-center gap-[3rem] m-auto max-w-[1200px] py-[5rem] px-[1rem]">
+        <section className="flex-1">
           <h1 className="text-[2.5rem] font-[700] mb-[1rem]">
             {article.title}
           </h1>
@@ -23,13 +22,12 @@ const page = async ({ params }) => {
           ))}
         </section>
 
-        <section className="flex-1">
+        <section className="flex-1 w-full">
           <Image
             alt={article.title}
             src={article.image}
             width={1000}
             height={1000}
-            className="max-w-[500px]"
           />
         </section>
       </article>
