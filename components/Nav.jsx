@@ -77,22 +77,22 @@ const Nav = () => {
         <div className="flex flex-col mt-[7rem] justify-center items-center">
           <div>
             <ul className="text-center flex flex-col gap-[1.5rem] text-[1.8rem] font-[600] tracking-[.1rem]">
-              <Link href="/">
+              <Link onClick={() => setToggleNav(false)} href="/">
                 <li>Home</li>
               </Link>{" "}
-              <Link href="/Gallery">
+              <Link onClick={() => setToggleNav(false)} href="/Gallery">
                 <li>Gallery</li>
               </Link>{" "}
-              <Link href="/Services">
+              <Link onClick={() => setToggleNav(false)} href="/Services">
                 <li>Services</li>
               </Link>{" "}
-              <Link href="/Founder">
+              <Link onClick={() => setToggleNav(false)} href="/Founder">
                 <li>Founder</li>
               </Link>{" "}
-              <Link href="/AboutUs">
+              <Link onClick={() => setToggleNav(false)} href="/AboutUs">
                 <li>About Us</li>
               </Link>
-              <Link href="/ContactUs">
+              <Link onClick={() => setToggleNav(false)} href="/ContactUs">
                 <li>Contact Us</li>
               </Link>
             </ul>
