@@ -1,4 +1,12 @@
+"use client";
+
+import { animatePageIn } from "@/lib/animations";
+import { useEffect } from "react";
+
 export default function Template({ children }) {
+  useEffect(() => {
+    animatePageIn();
+  }, []);
   return (
     <>
       <div
