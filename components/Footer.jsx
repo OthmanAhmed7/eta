@@ -15,7 +15,7 @@ const Footer = () => {
               width={500}
               height={500}
               alt="Eta Logo"
-              src="/img/logo.png"
+              src="/img/logo.avif"
               className="flex-1"
             />
 

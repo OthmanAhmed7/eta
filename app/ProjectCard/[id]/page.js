@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { lastWork } from "@/lib/LatestWork";
 import { projects } from "@/lib/Projects";
@@ -7,6 +9,9 @@ const page = async ({ params }) => {
   const resolveParams = await params;
   const work = lastWork.find((w) => w.id === parseInt(resolveParams.id));
   const project = projects.find((p) => p.id === parseInt(resolveParams.id));
+
+  const LocomotiveScroll = (await import("locomotive-scroll")).default;
+  const locomotiveScroll = new LocomotiveScroll();
 
   return (
     <>

@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { articles } from "@/lib/Articles";
 import Image from "next/image";
@@ -5,6 +7,10 @@ import Image from "next/image";
 const page = async ({ params }) => {
   const resolveParams = await params;
   const article = articles.find((a) => a.id === parseInt(resolveParams.id));
+
+  const LocomotiveScroll = (await import("locomotive-scroll")).default;
+  const locomotiveScroll = new LocomotiveScroll();
+
   return (
     <>
       <article className="flex flex-col-reverse lg:flex-row items-start justify-center gap-[3rem] m-auto max-w-[1200px] py-[5rem] px-[1rem]">
